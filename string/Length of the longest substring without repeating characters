@@ -1,0 +1,10 @@
+arr= "geeksforgeeks"
+d={}
+res=0
+i=0
+for j in range(0,len(arr)):
+    if arr[j] in d:
+        i=max(i,d[arr[j]]+1)
+    res=max(res,(j-i)+1)
+    d[arr[j]]=j 
+print(res)
