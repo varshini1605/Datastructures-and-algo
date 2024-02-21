@@ -1,0 +1,16 @@
+inp1 = "listen"
+inp2 = "silent"
+c={}
+for i, j in zip(inp1, inp2):
+    if i in c.keys():
+        c[i]+=1 
+    else:
+        c[i]=1 
+    if j in c.keys():
+        c[j]-=1 
+    else:
+        c[j]=-1
+for k in c.values():
+    if k!=0:
+        print("False")
+print("True")
